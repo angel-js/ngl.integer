@@ -1,5 +1,5 @@
-ng-integer
-==========
+ngl.integer
+===========
 
 Create inputs which only accept integers
 
@@ -7,5 +7,5 @@ Usage
 -----
 
 ```html
-<input integer ng-model="foo" />
+<input ngl-integer ng-model="foo" />
 ```

@@ -1,19 +1,19 @@
-angular.module('integer', [])
+angular.module('ngl.integer', [])
 
-.factory('integer', function () {
+.factory('nglInteger', function () {
   'use strict';
 
   var NOT_INTEGER = /[^0-9]/g;
   
-  var integer = function (input) {
+  var nglInteger = function (input) {
     var output = parseInt(input.replace(NOT_INTEGER, ''), 10);
     if (!isNaN(output)) { return output; }
   };
   
-  return integer;
+  return nglInteger;
 })
 
-.directive('integer', function (integer) {
+.directive('nglInteger', function (integer) {
   'use strict';
 
   var link = function (scope, element, attrs, modelCtrl) {
